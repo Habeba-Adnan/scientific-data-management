@@ -1,0 +1,723 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#affected_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#affected_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#express -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#express">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#has_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#has_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#over-express -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#over-express">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#express"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tested_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tested_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treated_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#under-express -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#under-express">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#express"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#P_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#P_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#age_at_diagnosis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#age_at_diagnosis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_type_detailed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_type_detailed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cellularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cellularity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#chemotherapy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#chemotherapy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#deathfromcancer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#deathfromcancer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#hormone_therapy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#hormone_therapy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#level_of_aggressivness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#level_of_aggressivness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#neoplasmhistologicgrade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#overall_survival -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#overall_survival">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patientID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patientID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#radio_therapy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#radio_therapy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test_results -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test_results">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumor_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumor_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumor_stage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumor_stage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumorotherhistologic_subtype -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#tumorotherhistologic_subtype">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#type_of_breast_surgery -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#type_of_breast_surgery">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#neoplasmhistologicgrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#neoplasmhistologicgrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#cancer_tests"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test1"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test1_her"/>
+        <cancer_type_detailed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast Invasive Ductal Carcinoma</cancer_type_detailed>
+        <cellularity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</cellularity>
+        <tumor_size rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</tumor_size>
+        <tumor_stage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</tumor_stage>
+        <tumorotherhistologic_subtype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ductal/NST</tumorotherhistologic_subtype>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test2"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test2_her"/>
+        <cancer_type_detailed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast Mixed Ductal and Lobular Carcinoma</cancer_type_detailed>
+        <cellularity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</cellularity>
+        <tumor_size rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</tumor_size>
+        <tumor_stage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</tumor_stage>
+        <tumorotherhistologic_subtype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed</tumorotherhistologic_subtype>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test3"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test3_her"/>
+        <cancer_type_detailed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast Invasive Ductal Carcinoma</cancer_type_detailed>
+        <cellularity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moderate</cellularity>
+        <tumor_size rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</tumor_size>
+        <tumor_stage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</tumor_stage>
+        <tumorotherhistologic_subtype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ductal/NST</tumorotherhistologic_subtype>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Breast_Diseases"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test4"/>
+        <tested_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test4_her"/>
+        <cancer_type_detailed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast Invasive Ductal Carcinoma</cancer_type_detailed>
+        <cellularity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moderate</cellularity>
+        <tumor_size rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</tumor_size>
+        <tumor_stage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</tumor_stage>
+        <tumorotherhistologic_subtype rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ductal/NST</tumorotherhistologic_subtype>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3"/>
+        <gene_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brca1</gene_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4"/>
+        <gene_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brca2</gene_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2"/>
+        <gene_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palb2</gene_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#gene_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#Genes"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2"/>
+        <over-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3"/>
+        <under-express rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4"/>
+        <gene_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pten</gene_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status"/>
+        <status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative</status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status"/>
+        <status>Negative</status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status"/>
+        <status>Negative</status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her_status4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status"/>
+        <status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative</status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LumA</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LumB</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LumB</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50_test4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pam50+claudin-low_subtype"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LumB</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+        <P_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</P_ID>
+        <level_of_aggressivness rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</level_of_aggressivness>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+        <P_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</P_ID>
+        <level_of_aggressivness rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</level_of_aggressivness>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+        <P_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</P_ID>
+        <level_of_aggressivness rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</level_of_aggressivness>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology"/>
+        <P_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</P_ID>
+        <level_of_aggressivness rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</level_of_aggressivness>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <affected_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology1"/>
+        <has_a rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer1"/>
+        <treated_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_1"/>
+        <age_at_diagnosis rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</age_at_diagnosis>
+        <deathfromcancer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Living</deathfromcancer>
+        <overall_survival rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</overall_survival>
+        <patientID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</patientID>
+        <type_of_breast_surgery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BREAST CONSERVING</type_of_breast_surgery>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <affected_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology2"/>
+        <has_a rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer2"/>
+        <treated_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_2"/>
+        <age_at_diagnosis rdf:datatype="http://www.w3.org/2001/XMLSchema#float">52.0</age_at_diagnosis>
+        <deathfromcancer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Died of Disease</deathfromcancer>
+        <overall_survival rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</overall_survival>
+        <patientID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</patientID>
+        <type_of_breast_surgery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MASTECTOMY</type_of_breast_surgery>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <affected_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology3"/>
+        <has_a rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer3"/>
+        <treated_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_3"/>
+        <age_at_diagnosis rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.0</age_at_diagnosis>
+        <deathfromcancer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Died of Disease</deathfromcancer>
+        <overall_survival rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</overall_survival>
+        <patientID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</patientID>
+        <type_of_breast_surgery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MASTECTOMY</type_of_breast_surgery>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#patient"/>
+        <affected_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#pathology4"/>
+        <has_a rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#breast_cancer4"/>
+        <treated_by rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_4"/>
+        <age_at_diagnosis rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.0</age_at_diagnosis>
+        <deathfromcancer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Died of Other Causes</deathfromcancer>
+        <overall_survival rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</overall_survival>
+        <patientID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</patientID>
+        <type_of_breast_surgery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BREAST CONSERVING</type_of_breast_surgery>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test1_her -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test1_her">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEUTRAL</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test2_her -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test2_her">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEUTRAL</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test3_her -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test3_her">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEUTRAL</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test4_her -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#test4_her">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#her2_status_measured_by_snp6"/>
+        <test_results rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAIN</test_results>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <chemotherapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</chemotherapy>
+        <hormone_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hormone_therapy>
+        <radio_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</radio_therapy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <chemotherapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</chemotherapy>
+        <hormone_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hormone_therapy>
+        <radio_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</radio_therapy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <chemotherapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</chemotherapy>
+        <hormone_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hormone_therapy>
+        <radio_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</radio_therapy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatments_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-3#treatment"/>
+        <chemotherapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</chemotherapy>
+        <hormone_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hormone_therapy>
+        <radio_therapy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</radio_therapy>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
